@@ -1,0 +1,30 @@
+msg = input('Your Message:')
+l = len(msg)
+print(l)
+key = int(input('Give the encryption of key:'))
+trans =''
+i = 0
+a = 0
+
+#if mode == 'encrypt':
+#print(range(l))  
+
+
+while len(trans) < l:
+        
+        while i < l:
+             #print(i)
+              s = msg[i]
+              #print(s)
+              trans = trans + s              
+              #print(len(trans))
+              i =i + key
+              #print(i)
+        i = 0
+        a = a+1
+        #print(a)
+        i = i +a
+        #print(i)
+print(trans)
+
+
